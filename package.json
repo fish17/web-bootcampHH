@@ -1,22 +1,33 @@
 {
   "name": "web-bootcamphh",
   "version": "1.0.0",
-  "description": "jarvis",
-  "main": "hello-world.js",
-  "scripts": {
+  "description": "",
+  "main": "index.js",
+  "scripts": { 
+   "build": "webpack --watch",
+   "start": "node web-app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fish17/web-bootcampHH.git"
   },
-  "author": "HH",
+  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fish17/web-bootcampHH/issues"
   },
   "homepage": "https://github.com/fish17/web-bootcampHH#readme",
   "dependencies": {
-    "marvel-api": "^1.1.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "copy-webpack-plugin": "^4.2.3",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
   }
 }
