@@ -71,8 +71,8 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 class App {
   constructor() {
-    document.body.style.background = 'url("/images/background.png") no-repeatcenter center fixed'
-    document.body.style.backgroundsize = 'cover'
+    document.body.style.background = 'url("/images/background.png") no-repeat center center fixed'
+    document.body.style.backgroundSize = 'cover'
     document.body.style.height = '100%'
     document.body.style.margin = '0'
     document.body.style.backgroundRepeat = 'no-repeat'
