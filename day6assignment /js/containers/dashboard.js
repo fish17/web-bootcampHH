@@ -25,7 +25,7 @@ export default class Dashboard {
     
     })  
 
-    container.append(ironmnCard.getContent())
+    container.append(ironmanCard.getContent())
 
     return container
   }
