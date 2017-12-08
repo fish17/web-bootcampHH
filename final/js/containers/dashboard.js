@@ -21,7 +21,7 @@ export default class Dashboard {
     title.style.fontWeight = 'bold'
     title.style.fontSize = '24px'
 
-    title.append('Jarvis Web Project')
+    title.append('Hunter Final Project')
 
     container.appendChild(title)
 
@@ -41,7 +41,29 @@ export default class Dashboard {
       link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
       linkText: 'More Info on Hulk'
     })
-    container.append(hulkCard.getContent())
+    container.append(hulkCard.getContent()) 
+
+      let spidermanCard = new Card({
+      title: 'Spider-Man',
+      image: '/images/spiderman-thumb.png',
+      description: 'Peter Parker was bitten by a spider infecting him with the abilities of a spider. Now he runs around taking pictures of himself.',
+      link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
+      linkText: 'More Info about this character'
+    })
+    container.append(spidermanCard.getContent()) 
+
+       let ironmanCard = new Card({
+      title: 'Iron-Man',
+      image: '/images/ironman-thumb.jpg',
+      description: 'Tony Stark, billionaire weapons manufacturer with an unforgettable narcissistic personality. If you can see past the sarcasm there is a human under that metal case.',
+      link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
+      linkText: 'More Info about this character'
+    })
+    container.append(ironmanCard.getContent()) 
+
+
+
+
 
     return container
   }

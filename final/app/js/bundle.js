@@ -127,7 +127,7 @@ class Dashboard {
     title.style.fontWeight = 'bold'
     title.style.fontSize = '24px'
 
-    title.append('Jarvis Web Project')
+    title.append('Hunter Final Project')
 
     container.appendChild(title)
 
@@ -147,7 +147,29 @@ class Dashboard {
       link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
       linkText: 'More Info on Hulk'
     })
-    container.append(hulkCard.getContent())
+    container.append(hulkCard.getContent()) 
+
+      let spidermanCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
+      title: 'Spider-Man',
+      image: '/images/spiderman-thumb.png',
+      description: 'Peter Parker was bitten by a spider infecting him with the abilities of a spider. Now he runs around taking pictures of himself.',
+      link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
+      linkText: 'More Info about this character'
+    })
+    container.append(spidermanCard.getContent()) 
+
+       let ironmanCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
+      title: 'Iron-Man',
+      image: '/images/ironman-thumb.jpg',
+      description: 'Tony Stark, billionaire weapons manufacturer with an unforgettable narcissistic personality. If you can see past the sarcasm there is a human under that metal case.',
+      link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
+      linkText: 'More Info about this character'
+    })
+    container.append(ironmanCard.getContent()) 
+
+
+
+
 
     return container
   }
@@ -173,13 +195,13 @@ class Card {
     // Create Card
     let card = document.createElement('div')
     card.classList.add('col-6')
-    card.style.height = '400px'
+    card.style.height = '200px'
     card.style.margin = '1%'
     card.style.cursor = 'pointer'
     card.style.boxShadow = '0px 0px 3px #888888'
     card.style.borderWidth = '2px'
     card.style.borderStyle = 'none'
-    card.style.borderColor = 'gold'
+    card.style.borderColor = 'blue'
     card.style.background  = 'rgba(0, 0, 0, 0.4)'
     card.style.borderRadius = '25px'
     
