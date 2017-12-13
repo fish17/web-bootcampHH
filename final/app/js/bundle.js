@@ -121,7 +121,7 @@ class Dashboard {
     let title = document.createElement('div')
     title.id = 'title'
     title.style.color = '#dddddd'
-    title.style.marginTop = '20px'
+    title.style.marginTop = '30px'
     title.style.marginLeft = '1%'
     title.style.textAlign = 'left'
     title.style.fontWeight = 'bold'
@@ -131,41 +131,41 @@ class Dashboard {
 
     container.appendChild(title)
 
-    let thorCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
-      title: 'Thor',
-      image: '/images/thor-thumb.png',
-      description: 'As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have described Thor as an over-muscled, oafish imbecile, he\'s quite smart and compassionate.',
-      link: 'http://marvel.com/universe/Thor_(Thor_Odinson)#axzz502Le2EeS',
-      linkText: 'More Info on Thor'
+    let aqueductCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
+      title: 'Aqueduct',
+      image: '/images/aqueduct-thumb.jpg',
+      description: 'Peter Van Zante who was injured during military engagements was shipped back to the US in a container which was supposed to save his life. However, lightning struck the ship which was carrying Peter. Peter is well now and has some interesting powers.',
+      link: 'http://marvel.com/universe/Aqueduct?utm_campaign=apiRef&utm_source=dcc178363b548b2edf8fd1efd697faae',
+      linkText: 'More Info on this character'
     })
-    container.append(thorCard.getContent())
+    container.append(aqueductCard.getContent())
 
-    let hulkCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
-      title: 'Hulk',
-      image: '/images/hulk-thumb.png',
-      description: 'Caught in a gamma bomb explosion while trying to save the life of a teenager, Dr. Bruce Banner was transformed into the incredibly powerful creature called the Hulk.',
-      link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
-      linkText: 'More Info on Hulk'
+    let arcadeCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
+      title: 'Arcade',
+      image: '/images/Arcade-thumb.jpeg',
+      description: 'Arcade is one of the most mysterious villains in this fictional world. He is known for his art of being an assassin however, no one really knows who Arcade is or what his true background is. Arcade is a master at deception and his true roots are unknown.',
+      link: 'http://marvel.com/universe/Arcade?utm_campaign=apiRef&utm_source=dcc178363b548b2edf8fd1efd697faae',
+      linkText: 'More Info on this character'
     })
-    container.append(hulkCard.getContent()) 
+    container.append(arcadeCard.getContent()) 
 
-      let spidermanCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
-      title: 'Spider-Man',
-      image: '/images/spiderman-thumb.png',
-      description: 'Peter Parker was bitten by a spider infecting him with the abilities of a spider. Now he runs around taking pictures of himself.',
-      link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
+      let antmanCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
+      title: 'Ant-Man',
+      image: '/images/antman-thumb.jpg',
+      description: 'Smart criminal turned good? Eric O Grady was an electrical engineer when unforeseen circumstances caused him to turn to a life of crime. However, stumbling upon the Ant-Man suit allowed him to decrease size and increase strength. Will he use it for good?',
+      link: 'http://marvel.com/universe/Ant-Man_(Eric_O%27Grady)?utm_campaign=apiRef&utm_source=dcc178363b548b2edf8fd1efd697faae',
       linkText: 'More Info about this character'
     })
-    container.append(spidermanCard.getContent()) 
+    container.append(antmanCard.getContent()) 
 
-       let ironmanCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
-      title: 'Iron-Man',
-      image: '/images/ironman-thumb.jpg',
-      description: 'Tony Stark, billionaire weapons manufacturer with an unforgettable narcissistic personality. If you can see past the sarcasm there is a human under that metal case.',
-      link: 'http://marvel.com/universe/Hulk_(Bruce_Banner)#axzz502Le2EeS',
+      let apocalypseCard = new __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]({
+      title: 'Apocalypse',
+      image: '/images/Apocalypse-thumb.jpg',
+      description: 'Alien supervillain who can disguise himself as any human being. He is a master of alien weapons and of his own body on a cellular level. Can he be defeated?',
+      link: 'http://marvel.com/universe/Apocalypse_(En_Sabah_Nur)?utm_campaign=apiRef&utm_source=dcc178363b548b2edf8fd1efd697faae',
       linkText: 'More Info about this character'
     })
-    container.append(ironmanCard.getContent()) 
+    container.append(apocalypseCard.getContent()) 
 
 
 
@@ -195,7 +195,7 @@ class Card {
     // Create Card
     let card = document.createElement('div')
     card.classList.add('col-6')
-    card.style.height = '200px'
+    card.style.height = '300px'
     card.style.margin = '1%'
     card.style.cursor = 'pointer'
     card.style.boxShadow = '0px 0px 3px #888888'
@@ -217,7 +217,7 @@ class Card {
     cardTitle.style.margin = 'auto'
     cardTitle.style.textAlign = 'center'
     cardTitle.style.fontWeight = 'bold'
-    cardTitle.style.fontSize = '24px'
+    cardTitle.style.fontSize = '20px'
     cardTitle.style.width = '100%'
     cardHeader.append(cardTitle)
 
@@ -233,7 +233,10 @@ class Card {
     cardImageContainer.style.flex = '.5'
 
     let cardImage = document.createElement('img')
-    cardImage.src = this.options.image
+    cardImage.src = this.options.image 
+
+    cardImage.style.height = '85%'
+    cardImage.style.width = '85%'
     cardImageContainer.append(cardImage)
     cardBody.append(cardImageContainer)
 

@@ -7,7 +7,7 @@ export default class Card {
     // Create Card
     let card = document.createElement('div')
     card.classList.add('col-6')
-    card.style.height = '200px'
+    card.style.height = '300px'
     card.style.margin = '1%'
     card.style.cursor = 'pointer'
     card.style.boxShadow = '0px 0px 3px #888888'
@@ -29,7 +29,7 @@ export default class Card {
     cardTitle.style.margin = 'auto'
     cardTitle.style.textAlign = 'center'
     cardTitle.style.fontWeight = 'bold'
-    cardTitle.style.fontSize = '24px'
+    cardTitle.style.fontSize = '20px'
     cardTitle.style.width = '100%'
     cardHeader.append(cardTitle)
 
@@ -45,7 +45,10 @@ export default class Card {
     cardImageContainer.style.flex = '.5'
 
     let cardImage = document.createElement('img')
-    cardImage.src = this.options.image
+    cardImage.src = this.options.image 
+
+    cardImage.style.height = '85%'
+    cardImage.style.width = '85%'
     cardImageContainer.append(cardImage)
     cardBody.append(cardImageContainer)
 
